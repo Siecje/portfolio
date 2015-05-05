@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang='en'>
+
+  <head>
+    <meta charset='utf-8'>
+    <title>Portfolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,700,400' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='style.css'>
+    <style>
+      /*.headerTransparent{
+        opacity: 0.5;
+      }*/
+      .headerTransparent {
+        background: rgba(0, 0, 0, 0.5);
+      }
+      .green {
+        color: #598D1D;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class='fixed bg-black full-width top-0' style='height: 4rem;transition: background .2s ease;' onscroll='transparent(this)'>
+      <span class='col h1 mt1'><a href='#top' id='top' class='green'>Portfolio</a></span>
+      <span class='col-right h2 mt1 ml1'><a href='#services' class='green'>Services</a></span>
+      <span class='col-right h2 mt1 ml1'><a href='#portfolio' class='green'>Portfolio</a></span>
+      <span class='col-right h2 mt1 ml1'><a href='#contact' class='green'>Contact</a></span>
+    </header>
+
+    <div id='content' class='mt4'>
+      <h2 class='h1 center' id='services'>Services</h2>
+      <div class='p4'>
+        <div class='col col-3'>
+          <h3>Responsive Design</h3>
+          <span>Creating designs that work for various devices and screen sizes</span>
+        </div>
+        <div class='col col-3'>
+          <h3>Mobile Development</h3>
+          <span>Creating mobile apps for iOS and Android</span>
+        </div>
+        <div class='col col-3'>
+          <h3>REST APIs</h3>
+          <span>Creating custom APIs to integrate with mobile and desktop clients</span>
+        </div>
+        <div class='col col-3'>
+          <h3>Single Page Applications</h3>
+          <span>Creating Dynamic Web Applications using APIs that are fast and efficient.</span>
+        </div>
+      </div>
+      <div class='cf'></div>
+
+      <h2 class='h1 center' id='portfolio'>Portfolio</h2>
+      <div class='p4'>
+        <div class='col col-3'>
+          One
+        </div>
+        <div class='col col-3'>
+          Two
+        </div>
+        <div class='col col-3'>
+          Three
+        </div>
+        <div class='col col-3'>
+          Four
+        </div>
+      </div>
+      <div class='cf'></div>
+
+      <h2 class='h1 center' id='contact'>Contact</h2>
+      <div class='cntr'>
+        <div class='col col-4'>
+          One
+        </div>
+        <div class='col col-4'>
+          Two
+        </div>
+        <div class='col col-4'>
+          Three
+        </div>
+      </div>
+      <div class='cf'></div>
+      
+    </div>
+
+    <script>
+      // VanillaJS
+      // document.onscroll = function(){
+      //   var header = document.getElementsByTagName('header')[0];
+      //   var content = document.getElementById('content');
+      //   console.log(content.scrollTop);
+      //   if(content.scrollTop <= 0){
+      //     header.style.opacity = 0.5;
+      //   }
+      // };
+    </script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+    <script src='main.js'></script>
+  </body>
+
+</html>
